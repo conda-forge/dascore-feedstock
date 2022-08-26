@@ -30,6 +30,9 @@ requirements:
     - setuptools
     - pytables
     - xarray
+    - typing_extensions
+    - numpy
+    - packaging
 
 test:
   imports:
