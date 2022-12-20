@@ -144,5 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@d-chambers](https://github.com/d-chambers/)
-* [@eileenrmartin](https://github.com/eileenrmartin)
+* [@eileenrmartin](https://github.com/eileenrmartin/)
 
