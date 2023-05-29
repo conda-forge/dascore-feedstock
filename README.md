@@ -1,11 +1,11 @@
-About dascore
-=============
+About dascore-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dascore-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/dascore/
 
 Package license: LGPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dascore-feedstock/blob/main/LICENSE.txt)
 
 Summary: A python library distributed fiber optic sensing
 
