@@ -11,13 +11,16 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
-  number: 0
-
+  script: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . -v
+  number: 1
+  
 requirements:
   host:
     - pip
     - python >=3.9
+    - setuptools >=45
+    - setuptools_scm >=3.4
+    - toml
   run:
     - findiff
     - matplotlib-base
@@ -39,6 +42,7 @@ test:
     - dascore
   commands:
     - pip check
+    - python -c "import dascore; ver = dascore.__version__; assert ver != '0.0.0'"
   requires:
     - pip
 
