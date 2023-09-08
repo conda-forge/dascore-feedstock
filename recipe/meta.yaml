@@ -22,7 +22,7 @@ requirements:
     - setuptools_scm >=3.4
     - toml
   run:
-    - matplotlib >=3.5
+    - matplotlib-base >=3.5
     - numpy >=1.24
     - packaging
     - pandas >=2.0
@@ -33,6 +33,7 @@ requirements:
     - pytables >=3.7
     - typing_extensions
     - pint
+    - python >=3.10
 
 test:
   imports:
