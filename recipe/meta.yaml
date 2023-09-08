@@ -22,20 +22,17 @@ requirements:
     - setuptools_scm >=3.4
     - toml
   run:
-    - findiff
-    - matplotlib-base
-    - pandas
-    - pooch >=1.2
-    - pydantic >=1.9.0,<2.0.0
-    - python >=3.9
-    - rich
-    - scipy >=1.10.0
-    - setuptools
-    - pytables
-    - xarray
-    - typing_extensions
-    - numpy
+    - matplotlib >=3.5
+    - numpy >=1.24
     - packaging
+    - pandas >=2.0
+    - pooch >=1.2
+    - pydantic >=2.1
+    - rich
+    - scipy >=1.10
+    - pytables >=3.7
+    - typing_extensions
+    - pint
 
 test:
   imports:
@@ -57,3 +54,4 @@ extra:
   recipe-maintainers:
     - d-chambers
     - eileenrmartin
+    - ahmadtourei
