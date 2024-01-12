@@ -29,7 +29,7 @@ requirements:
     - pooch >=1.2
     - pydantic >=2.1
     - rich
-    - scipy >=1.10
+    - scipy >=1.11
     - pytables >=3.7
     - typing_extensions
     - pint
