@@ -23,7 +23,7 @@ requirements:
     - toml
   run:
     - matplotlib-base >=3.5
-    - numpy >=1.24, <2
+    - numpy >=1.24
     - packaging
     - pandas >=2.0
     - pooch >=1.2
