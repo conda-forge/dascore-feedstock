@@ -1,13 +1,13 @@
 {% set name = "dascore" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dascore-{{ version }}.tar.gz
-  sha256: 6b696f30f9cbc87e0bbf98554620f90ebadfeb96257c3cb6b28aaa3a37c46d3f
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dascore-{{ version }}.tar.gz
+  sha256: ded43f202540f3cc8eba9515e22991814c4ad094c722c8ba3394c8bac493fb37
 
 build:
   noarch: python
@@ -17,13 +17,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.10
+    - python {{ python_min }}
     - setuptools >=45
     - setuptools_scm >=3.4
     - toml
   run:
     - matplotlib-base >=3.5
-    - numpy >=1.24, <2
+    - numpy >=1.24
     - packaging
     - pandas >=2.0
     - pooch >=1.2
@@ -33,7 +33,7 @@ requirements:
     - pytables >=3.7
     - typing_extensions
     - pint
-    - python >=3.10
+    - python >={{ python_min }}
     - segyio
     - h5py
 
@@ -45,6 +45,7 @@ test:
     - python -c "import dascore; ver = dascore.__version__; assert ver != '0.0.0'"
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/dascore/
