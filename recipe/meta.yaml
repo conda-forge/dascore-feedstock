@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dascore-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dascore-{{ version }}.tar.gz
   sha256: ded43f202540f3cc8eba9515e22991814c4ad094c722c8ba3394c8bac493fb37
 
 build:
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.10
+    - python {{ python_min }}
     - setuptools >=45
     - setuptools_scm >=3.4
     - toml
@@ -33,7 +33,7 @@ requirements:
     - pytables >=3.7
     - typing_extensions
     - pint
-    - python >=3.10
+    - python >={{ python_min }}
     - segyio
     - h5py
 
@@ -45,6 +45,7 @@ test:
     - python -c "import dascore; ver = dascore.__version__; assert ver != '0.0.0'"
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/dascore/
