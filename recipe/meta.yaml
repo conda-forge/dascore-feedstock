@@ -35,6 +35,7 @@ requirements:
     - pint
     - python >={{ python_min }}
     - segyio
+    - numba
     - h5py
 
 test:
