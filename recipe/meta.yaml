@@ -1,5 +1,5 @@
 {% set name = "dascore" %}
-{% set version = "0.1.7" %}
+{% set version = "0.1.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dascore-{{ version }}.tar.gz
-  sha256: b4f7f3b03ac2fe563f67554680cea137cd5a26d2ed3d9cbe8bf4d28baf37a952
+  sha256: 71e31aeb798ea05273d8d003d112fe12612e280acb88ee8cb0723b819d486b63
 
 build:
   noarch: python
