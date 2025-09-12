@@ -1,5 +1,5 @@
 {% set name = "dascore" %}
-{% set version = "0.1.10" %}
+{% set version = "0.1.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dascore-{{ version }}.tar.gz
-  sha256: 72c1894e1fb19135b09e661148680e32a3c12292659366ea2820c4d32b5fda28
+  sha256: c0894b29a28696ff67b3b77f32db43ea4e3430c4b2e89e9536843b44489a04c5
 
 build:
   noarch: python
@@ -29,7 +29,7 @@ requirements:
     - pooch >=1.2
     - pydantic >2.1
     - rich
-    - scipy >=1.11.0
+    - scipy >=1.15.0
     - pytables >=3.7
     - typing_extensions
     - pint
