@@ -37,6 +37,7 @@ requirements:
     - segyio
     - numba
     - h5py
+    - bottleneck
 
 test:
   imports:
