@@ -1,5 +1,5 @@
 {% set name = "dascore" %}
-{% set version = "0.1.11" %}
+{% set version = "0.1.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dascore-{{ version }}.tar.gz
-  sha256: c0894b29a28696ff67b3b77f32db43ea4e3430c4b2e89e9536843b44489a04c5
+  sha256: 9aeed358f88275c53ec976fabbb6513fc5cdc5803d4dea6cb4cd6ce1a9c8093f
 
 build:
   noarch: python
@@ -37,6 +37,7 @@ requirements:
     - segyio
     - numba
     - h5py
+    - bottleneck
 
 test:
   imports:
