@@ -192,6 +192,3 @@ Feedstock Maintainers
 * [@d-chambers](https://github.com/d-chambers/)
 * [@eileenrmartin](https://github.com/eileenrmartin/)
 
-
-<!-- dummy commit to enable rerendering -->
-
